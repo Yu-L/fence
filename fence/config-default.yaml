@@ -802,6 +802,11 @@ SYNAPSE_URI: 'https://repo-prod.prod.sagebase.org/auth/v1'
 SYNAPSE_JWKS_URI:
 SYNAPSE_DISCOVERY_URL:
 SYNAPSE_AUTHZ_TTL: 86400
+# MIDRC user registration feature: Ask users to register (provide name/org/email) on login.
+# If user registers, add them to configured Arborist group; idea is that the Arborist group
+# will have access to download data.
+REGISTER_USERS_ON: false
+REGISTERED_USERS_GROUP: ''
 # RAS refresh_tokens expire in 15 days
 RAS_REFRESH_EXPIRATION: 1296000
 # Number of projects that can be registered to a Google Service Accont
