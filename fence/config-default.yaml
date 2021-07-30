@@ -178,7 +178,7 @@ OPENID_CONNECT:
     mock: false
     mock_default_user: 'test@example.com'
   # For information on configuring an Okta tenant as an OIDC IdP refer to Okta documentation at:
-  # https://developer.okta.com/docs/reference/api/oidc/#2-okta-as-the-identity-platform-for-your-app-or-api  
+  # https://developer.okta.com/docs/reference/api/oidc/#2-okta-as-the-identity-platform-for-your-app-or-api
   okta:
     discovery_url: ''
     client_id: ''
@@ -808,8 +808,8 @@ SYNAPSE_AUTHZ_TTL: 86400
 # MIDRC user registration feature: Ask users to register (provide name/org/email) on login.
 # If user registers, add them to configured Arborist group; idea is that the Arborist group
 # will have access to download data.
-REGISTER_USERS_ON: false
-REGISTERED_USERS_GROUP: ''
+REGISTER_USERS_ON: true
+REGISTERED_USERS_GROUP: 'data_uploaders'
 # RAS refresh_tokens expire in 15 days
 RAS_REFRESH_EXPIRATION: 1296000
 # Number of projects that can be registered to a Google Service Accont
